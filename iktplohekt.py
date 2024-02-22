@@ -18,9 +18,7 @@ betu=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S
 szam=["0","1","2","3","4","5","6","7","8","9"]
 
 if li[5] == '-':
-    print("Műkszik")
     if li[2] == "-":
-        print("Műkszik")
         if li[0].upper() in betu:
             print("This")
         if li[1].upper() in betu:
