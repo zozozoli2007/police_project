@@ -14,8 +14,7 @@ else:
 
 
 li = list(rsze)
-betu=("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-betu_li=list(betu)
+betu=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
 if li[5] == '-':
     print("Műkszik")
