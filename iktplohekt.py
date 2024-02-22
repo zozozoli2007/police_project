@@ -14,11 +14,14 @@ else:
 
 
 li = list(rsze)
+betu=("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+betu_li=list(betu)
 
 if li[5] == '-':
     print("Műkszik")
     if li[2] == "-":
         print("Műkszik")
+        
 elif li[4]=="-":
     print("Műkszik")
 else:
