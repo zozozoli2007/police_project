@@ -33,6 +33,8 @@ if li[5] == '-':
             print("god")
         if li[8].upper() in szam:
             print("There's more")
+        else:
+            print("nem jo")
 elif li[4]=="-":
     print("Műkszik")
     if li[0].upper() in betu:
@@ -49,5 +51,7 @@ elif li[4]=="-":
         print("Based on what?")
     if li[7].upper() in szam:
         print("Sex")
+    else:
+        print("nem jo")
 else:
     print("nem jo")
