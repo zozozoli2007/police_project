@@ -1,18 +1,4 @@
-'''def rendszam_e(rendsz):
-    itelet = 0
-    return itelet'''
-
-rsze = input("Mi a rendszám\n")
-'''a = rendszam_e(rsze)
-
-if (a == 0):
-    print('Nem rendszám!')
-elif (a == 1):
-    print('Régi rendszám.')
-else:
-    print('Új rendszám.')'''
-
-
+rsze = input("Mi a rendszám\n")
 li = list(rsze)
 betu=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 szam=["0","1","2","3","4","5","6","7","8","9"]
