@@ -6,37 +6,37 @@ szam=["0","1","2","3","4","5","6","7","8","9"]
 if li[5] == '-':
     if li[2] == "-":
         if li[0].upper() in betu:
-            print("This")
+            print("Jo")
         if li[1].upper() in betu:
-            print("is")
+            print("jo")
         if li[3].upper() in betu:
-            print("a")
+            print("jo")
         if li[4].upper() in betu:
-            print("bucket")
+            print("jo")
         if li[6].upper() in szam:
-            print("Dear,")
+            print("jo")
         if li[7].upper() in szam:
-            print("god")
+            print("jo")
         if li[8].upper() in szam:
-            print("There's more")
+            print("jo")
         else:
             print("nem jo")
 elif li[4]=="-":
     print("Műkszik")
     if li[0].upper() in betu:
-        print("Red")
+        print("jo")
     if li[1].upper() in betu:
-        print("spy")
+        print("jo")
     if li[2].upper() in betu:
-        print("is")
+        print("jo")
     if li[3].upper() in betu:
-        print("based")
+        print("jo")
     if li[5].upper() in szam:
-        print("Based?")
+        print("jo")
     if li[6].upper() in szam:
-        print("Based on what?")
+        print("jo")
     if li[7].upper() in szam:
-        print("Sex")
+        print("jo")
     else:
         print("nem jo")
 else:
