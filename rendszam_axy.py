@@ -48,6 +48,25 @@ def rendszam(rsze):
                 return 0
         else:
             return 0
+    #Itt ellenőrzöm hogy régi rendszám-e
+    elif li[3]=="-":
+        if li[0].upper in betu:
+            if li[1].upper in betu:
+                if li[2].upper in betu:
+                    if li[4] in szam:
+                        if li[5] in szam:
+                            if li[6] in szam:
+                                return 3
+                        else:
+                            return 0
+                    else:
+                        return 0
+                else:
+                    return 0
+            else:
+                return 0
+        else:
+            return 0
     else:
         return 0
         
