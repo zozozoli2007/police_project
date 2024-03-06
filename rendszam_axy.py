@@ -88,5 +88,8 @@ while True:
     elif (answer==2):
         print("A rendszám új")
         break
+    elif (answer==3):
+        print("A rendszám régi")
+        break
     else:
         print("Az ellenőrzés alatt hiba lépett fel. Kérem ismételje meg a bevitelt\n")
