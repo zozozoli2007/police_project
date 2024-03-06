@@ -9,49 +9,65 @@ def rendszam(rsze):
         if li[2] == "-":
             #Ellenőriztük hogy 1-2-ig és 4-5-ig betük vannak-e
             if li[0].upper() in betu:
-                print("Jo")
-            if li[1].upper() in betu:
-                print("Jo")
-            if li[3].upper() in betu:
-                print("jo")
-            if li[4].upper() in betu:
-                print("Jo")
-            if li[6].upper() in szam:
-                print("jo")
-            if li[7].upper() in szam:
-                print("jo")
-            if li[8].upper() in szam:
-                print("jo")
+                if li[1].upper() in betu:
+                    if li[3].upper() in betu:
+                        if li[4].upper() in betu:
+                            if li[6].upper() in szam:
+                                if li[7].upper() in szam:
+                                    if li[8].upper() in szam:
+                                        return 1
+                            else:
+                                return 0
+                        else:
+                            return 0
+                    else:
+                        return 0
+                else:
+                    return 0
             else:
-                print("nem jo")
+                return 0
     #Itt pedig ellenőriztük hogy "AAAA-111" formátumban van-e
     elif li[4]=="-":
-        print("Műkszik")
         if li[0].upper() in betu:
-            print("jo")
-        if li[1].upper() in betu:
-            print("jo")
-        if li[2].upper() in betu:
-            print("jo")
-        if li[3].upper() in betu:
-            print("jo")
-        if li[5].upper() in szam:
-            print("jo")
-        if li[6].upper() in szam:
-            print("jo")
-        if li[7].upper() in szam:
-            print("jo")
+            if li[1].upper() in betu:
+                if li[2].upper() in betu:
+                    if li[3].upper() in betu:
+                        if li[5].upper() in szam:
+                            if li[6].upper() in szam:
+                                if li[7].upper() in szam:
+                                    return 2
+                            else:
+                                return 0
+                        else:
+                            return 0
+                    else:
+                        return 0
+                else:
+                    return 0
+            else:
+                return 0
         else:
-            print("nem jo")
+            return 0
     else:
-        print("nem jo")
-    return
+        return 0
         
 #Itt kezdődik egy teszt program
+while True:
+    rsze = input("Mi a rendszám\n")
 
-rsze = input("Mi a rendszám\n")
+    li = list(rsze)
 
-li = list(rsze)
+    #Meghívjuk az alprogramot
 
-#Meghívjuk az alprogramot
-rendszam(li)
+    answer=(rendszam(li))
+
+    #Itt pedig kiadjuk a választ
+    
+    if (answer==1):
+        print("A rendszám új")
+        break
+    elif (answer==2):
+        print("A rendszám új")
+        break
+    else:
+        print("Az ellenőrzés alatt hiba lépett fel. Kérem ismételje meg a bevitelt\n")
