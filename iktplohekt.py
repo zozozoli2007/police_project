@@ -8,15 +8,20 @@ def rendszam(rsze):
     if li[5] == '-':
         if li[2] == "-":
             #Ellenőriztük hogy 1-2-ig és 4-5-ig betük vannak-e
-            for do in range(3):
-                if li[do].upper() in betu:
-                    print("Jo")
-            for do2 in range(3):
-                if li[do2+2].upper() in betu:
-                    print("jo")
-            for do3 in range(4):
-                if li[do3+6].upper() in szam:
-                    print("jo")
+            if li[0].upper() in betu:
+                print("Jo")
+            if li[1].upper() in betu:
+                print("Jo")
+            if li[3].upper() in betu:
+                print("jo")
+            if li[4].upper() in betu:
+                print("Jo")
+            if li[6].upper() in szam:
+                print("jo")
+            if li[7].upper() in szam:
+                print("jo")
+            if li[8].upper() in szam:
+                print("jo")
             else:
                 print("nem jo")
     #Itt pedig ellenőriztük hogy "AAAA-111" formátumban van-e
