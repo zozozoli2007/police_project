@@ -1,6 +1,6 @@
 #Alprogram ami az új rendszám fajtát ismeri fel
 
-def rendszam(rsze):
+def rendszam(li):
     #Egy-egy tuple belsejében elhelyeztük a betüket és számokat
     betu=("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")
     szam=("0","1","2","3","4","5","6","7","8","9")
@@ -49,7 +49,7 @@ def rendszam(rsze):
         else:
             return 0
     #Itt ellenőrzöm hogy régi rendszám-e
-    elif rsze[3]=="-":
+    elif li[3]=="-":
         if li[0].upper in betu:
             if li[1].upper in betu:
                 if li[2].upper in betu:
@@ -72,7 +72,7 @@ def rendszam(rsze):
         
 #Itt kezdődik egy teszt program
 while True:
-    rsze = input("Mi a rendszám\n")
+    rsze = input("Mi a rendszám?\n")
 
     li = list(rsze)
 
