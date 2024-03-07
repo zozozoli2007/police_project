@@ -1,6 +1,8 @@
 #Alprogram
 
-
+def rendszam_e(rsze):
+    
+    return
 
 #Főprogram
 
