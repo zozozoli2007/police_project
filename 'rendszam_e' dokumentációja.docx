@@ -3,3 +3,14 @@ rendszam_e alprogram dokumentációja
 Dokumentáció ezen részét irta: Rigla Zoltán Attila
 
 Az alprogram hibátlanul működik. Ha hiba lép fel tudassák velem.
+Alprogram részekre szedve:
+    "def rendszam_e(rsz):
+    if rsz[3]=="-":
+        if rsz[:3].isupper() and rsz[4:].isdigit():
+            return 1
+        else:
+            return 0"
+    Ezen rész definiálja a függvényt és elkezdi a rendszám felismerését, ebben az esetben a régit.
+        'if rsz[3]=="-":', 'elif rsz[2]=="-" and rsz[5]=="-":', 'elif rsz[4]=="-":' - Azonosítja, hogy a rendszámban hol helyezkedik el a "-"
+    Majd ezen belül elkezdi ellenőrízni hogy a maradék karakter, új esetében az első 4 régi esetében első 3 betű-e és az utolsó három szám-e.
+    Ha ez sikertelen, akkor a program vissza adja a "0"-t, de ha sikeres akkor régi esetében "1"-t, új esetében pedig "2"-t ad vissza.
