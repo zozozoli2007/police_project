@@ -1,11 +1,23 @@
 #Alprogram
 
 def rendszam_e(rsz):
-    betu=("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")
-    szam=("0","1","2","3","4","5","6","7","8","9")
     if rsz[3]=="-":
-        if rsz[0:2] in betu:
+        if rsz[:3].isupper() and rsz[4:].isdigit():
             return 1
+        else:
+            return 0
+    elif rsz[2]=="-" and rsz[5]=="-":
+        if rsz[:2].isupper() and rsz[3:4].isupper() and rsz[6:].isdigit():
+            return 2
+        else:
+            return 0
+    elif rsz[4]=="-":
+        if rsz[:4].isupper() and rsz[5:].isdigit():
+            return 2
+        else:
+            return 0
+    else:
+        return 0
 
 #Főprogram
 
@@ -13,9 +25,9 @@ rsze = input('Rendszám: ')
 
 a = rendszam_e(rsze)
 print(a)
-if (a == 1):
-    print('Régi rendszám.')
-elif (a == 2):
-    print('Új rendszám.')
-else:
+if (a == 0):
     print('Nem rendszám!')
+elif (a == 1):
+    print('Régi rendszám.')
+else:
+    print('Új rendszám.')
