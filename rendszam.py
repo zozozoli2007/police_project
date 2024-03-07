@@ -28,7 +28,7 @@ def rendszam_formatum(rendszam):
     if legujabb_rendszam(rendszam):
         return f"A(z) {rendszam} rendszám a a legújabb típusú"
     elif ellenoriz_uj_rendszam(rendszam):
-        return f"A(z) {rendszam} rendszám új típusú."
+        return f"A(z) {rendszam} rendszám új típusú." and True
     elif ellenoriz_regi_rendszam(rendszam):
         return f"A(z) {rendszam} rendszám régi típusú."
     else:
@@ -42,11 +42,12 @@ def rendszam_formatum(rendszam):
 while True:
     rendszam = input("Kérem, adja meg a rendszámot: ")
     eredmeny = rendszam_formatum(rendszam)
-    print(eredmeny)            
-    #rendsz = open('rendszamok.txt', 'a', encoding='UTF-8')
-    #rendsz.write(eredmeny)
-    #rendsz.write(' Sorszám:')
-    #rendsz.write(str(i))
-    #i += 1
-    #rendsz.write(" \n")
-    #rendsz.close()
+    print(eredmeny)
+    if eredmeny == True:            
+        rendsz = open('rendszamok.txt', 'a', encoding='UTF-8')
+        rendsz.write(eredmeny)
+        rendsz.write(' Sorszám:')
+        rendsz.write(str(i))
+        i += 1
+        rendsz.write(" \n")
+        rendsz.close()
