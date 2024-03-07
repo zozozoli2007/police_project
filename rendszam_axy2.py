@@ -18,9 +18,9 @@ rsze = input('Rendszám: ')
 
 a = rendszam_e(rsze)
 
-if (a == 0):
-    print('Nem rendszám!')
-elif (a == 1):
+if (a == 1):
     print('Régi rendszám.')
-else:
+elif (a == 2):
     print('Új rendszám.')
+else:
+    print('Nem rendszám!')
