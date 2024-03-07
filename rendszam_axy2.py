@@ -6,9 +6,11 @@ def rendszam_e(rsze):
     if rsze[3]=="-":
         if rsze[:3] in betu and rsze[4:] in szam:
             return 1
+    elif rsze[4]=="-":
+        if rsze[:4] in betu and rsze[5:] in szam:
+            return 2
     else:
         return 0
-    return
 
 #Főprogram
 
