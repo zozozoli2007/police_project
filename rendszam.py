@@ -1,3 +1,4 @@
+# Rendszám felismerő program 
 def legujabb_rendszam(rendszam):
     if len(rendszam) == 9:
         if rendszam[2] == '-' and rendszam[5] == '-':
@@ -26,27 +27,21 @@ def rendszam_formatum(rendszam):
         if not (karakter.isalnum() or karakter == '-'):
             return "Nem megfelelő karakterek vannak a rendszámban."
     if legujabb_rendszam(rendszam):
-        return f"A(z) {rendszam} rendszám a a legújabb típusú"
+        return f"A(z) {rendszam} rendszám a legújabb típusú"
     elif ellenoriz_uj_rendszam(rendszam):
         return f"A(z) {rendszam} rendszám új típusú."
     elif ellenoriz_regi_rendszam(rendszam):
         return f"A(z) {rendszam} rendszám régi típusú."
     else:
-        return "Nem sikerült azonosítani a rendszám típusát. Kezdd előről az adatbevitelt!" 
+        return "Nem sikerült azonosítani a rendszám típusát. Kezdd előről az adatbevitelt!"
+# Kérjük be a felhasználótól a rendszámot és írjuk ki a végeredményt
+while True:
+    rendszam = input("Kérem, adja meg a rendszámot: ")
+    eredmeny = rendszam_formatum(rendszam)
+    print(eredmeny)  
+    
 
 
 
 
        
-#i = 1
-while True:
-    rendszam = input("Kérem, adja meg a rendszámot: ")
-    eredmeny = rendszam_formatum(rendszam)
-    print(eredmeny)            
-    #rendsz = open('rendszamok.txt', 'a', encoding='UTF-8')
-    #rendsz.write(eredmeny)
-    #rendsz.write(' Sorszám:')
-    #rendsz.write(str(i))
-    #i += 1
-    #rendsz.write(" \n")
-    #rendsz.close()

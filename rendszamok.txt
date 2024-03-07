@@ -1,0 +1,8 @@
+#i = 0
+#rendsz = open('rendszamok.txt', 'a', encoding='UTF-8')
+#rendsz.write(eredmeny)
+#rendsz.write(' Sorszám:')
+#i += 1
+#rendsz.write(str(i))
+#rendsz.write(" \n")
+#rendsz.close()

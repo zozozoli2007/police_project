@@ -72,7 +72,7 @@ def rendszam(rsze):
         
 #Itt kezdődik egy teszt program
 while True:
-    rsze = input("Mi a rendszám\n")
+    rsze = input("Mi a rendszám?\n")
 
     li = list(rsze)
 
