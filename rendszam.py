@@ -29,7 +29,7 @@ def rendszam_formatum(rendszam):
     if legujabb_rendszam(rendszam):
         return f"A(z) {rendszam} rendszám a legújabb típusú"
     elif ellenoriz_uj_rendszam(rendszam):
-        return f"A(z) {rendszam} rendszám új típusú." and True
+        return f"A(z) {rendszam} rendszám új típusú." 
     elif ellenoriz_regi_rendszam(rendszam):
         return f"A(z) {rendszam} rendszám régi típusú."
     else:
