@@ -17,7 +17,7 @@ Alprogram részekre szedve:
     Ha ez sikertelen, akkor a program vissza adja a "0"-t, de ha sikeres akkor régi esetében "1"-t, új esetében pedig "2"-t ad vissza.
 
 2. csapat:
-Tagok: Nagy Dani, Varga Kevin, Tóth Bence, Röffler István József, Szabó Gellért, Szarka Szilárd
+Tagok: Nagy Dani, Varga Kevin, Tóth Bence, Röffler István József, Szabó Gellért, Szarka Szilárd, Samodai Krisztián
 
 A mi részprogramunk! 
 Egy saját függvény segítségével bekértük és leteszteltük hogy a rendszám a mi kazegóriánkba tartozik e! Ha bele tartozik ezt visszaadja a főprogramnak ami pedig kiiratja
